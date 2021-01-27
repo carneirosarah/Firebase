@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login_tv_create_account.setOnClickListener {
-            startActivity(Intent(this, CadastroUsuarioActivity::class.java))
+            startActivity(Intent(this, GameActivity::class.java))
         }
     }
 }
