@@ -5,4 +5,9 @@
     <string name="login_button">LOG IN</string>
     <string name="login_checkbox">Remember</string>
     <string name="login_cadastro">Create account</string>
+    <string name="cadastro_name">Name</string>
+    <string name="cadastro_email">Email</string>
+    <string name="cadastro_senha">Password</string>
+    <string name="cadastro_conf_senha">Repeate password</string>
+    <string name="cadastro_button">CREATE ACCOUNT</string>
 </resources>
