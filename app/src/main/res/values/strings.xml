@@ -10,4 +10,8 @@
     <string name="cadastro_senha">Password</string>
     <string name="cadastro_conf_senha">Repeate password</string>
     <string name="cadastro_button">CREATE ACCOUNT</string>
+    <string name="game_name">Name</string>
+    <string name="game_created_at">Created  at</string>
+    <string name="game_desc">Description</string>
+    <string name="game_button">SAVE GAME</string>
 </resources>
