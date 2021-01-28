@@ -32,6 +32,10 @@ class HomeActivity : AppCompatActivity(), GameAdapter.OnClickGameListener {
         }
 
         viewModel.readGames()
+
+        button_add_game.setOnClickListener {
+            startActivity(Intent(this, CadastroGameActivity::class.java))
+        }
     }
 
     override fun onClickGame(position: Int) {
