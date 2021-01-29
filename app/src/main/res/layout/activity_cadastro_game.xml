@@ -28,7 +28,6 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/game_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/game_name"
@@ -39,6 +38,7 @@
                 app:boxBackgroundColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/game_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/teal_700"/>
@@ -46,7 +46,6 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/game_created_at"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/game_created_at"
@@ -56,6 +55,7 @@
                 app:boxBackgroundColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/game_created_at"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/teal_700"/>
@@ -63,7 +63,6 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/game_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/game_desc"
@@ -72,6 +71,7 @@
                 app:boxBackgroundColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/game_desc"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:textColor="@color/teal_700"
