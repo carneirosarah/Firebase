@@ -10,14 +10,14 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:backgroundTint="@color/red"
-        android:elevation="0.5dp"
-        app:cardCornerRadius="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/pageLayout"
+        app:layout_constraintEnd_toEndOf="@id/pageLayout"
         app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27">
+        app:layout_constraintStart_toStartOf="@id/pageLayout"
+        app:layout_constraintTop_toTopOf="@id/pageLayout"
+        app:layout_constraintVertical_bias="0.27"
+        android:elevation="50dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -31,14 +31,15 @@
         android:id="@+id/game_return"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:scaleType="center"
         android:src="@drawable/ic_baseline_arrow_back_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/pageLayout"
+        app:layout_constraintEnd_toEndOf="@id/pageLayout"
         app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/pageLayout"
+        app:layout_constraintTop_toTopOf="@id/pageLayout"
         app:layout_constraintVertical_bias="0.023"
-        android:scaleType="center"/>
+        android:elevation="50dp"/>
 
     <LinearLayout
         android:id="@+id/pageLayout"
@@ -54,6 +55,7 @@
             android:scaleType="centerCrop"/>
 
         <ScrollView
+            android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp">
