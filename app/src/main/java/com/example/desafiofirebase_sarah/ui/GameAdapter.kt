@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.desafiofirebase_sarah.R
 import com.example.desafiofirebase_sarah.domain.Game
+import com.squareup.picasso.Picasso
 
 
 class GameAdapter (val listener: OnClickGameListener): RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
@@ -57,6 +58,7 @@ class GameAdapter (val listener: OnClickGameListener): RecyclerView.Adapter<Game
         var game: Game = games.get(position)
         holder.nameGame.text = game.name
         holder.lancamentoGame.text = game.anoLancamento
+        Picasso.get().load(game.image).into(holder.imgGame)
         // imagem aqui
     }
 
