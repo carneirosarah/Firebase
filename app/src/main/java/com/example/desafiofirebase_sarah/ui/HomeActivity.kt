@@ -42,7 +42,7 @@ class HomeActivity : AppCompatActivity(), GameAdapter.OnClickGameListener {
 
         val game = viewModel.games.value?.get(position)
         val intent = Intent(this, GameActivity::class.java)
-        // intent.putExtra("game", game)
+        intent.putExtra("game", game)
         startActivity(intent)
     }
 }

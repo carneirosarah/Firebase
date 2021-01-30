@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -16,6 +17,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -40,8 +42,17 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.firebase:firebase-firestore-ktx:22.0.1'
+    implementation 'com.google.firebase:firebase-firestore:22.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
 
-    //Dependência RecyclerView
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
 }
